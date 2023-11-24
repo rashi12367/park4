@@ -9,11 +9,11 @@ const ParkSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  // Date: {
-  //   type: Date,
-  //   required: true,
-  //   default: new Date()
-  // },
+  Date: {
+    type: Date,
+    required: true,
+    default: new Date()
+  },
   Arrival: {
     type: Date,
     required: true
