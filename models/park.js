@@ -3,11 +3,12 @@ const mongoose = require('mongoose');
 const ParkSchema = new mongoose.Schema({
   Car_Registration_number: {
     type: String,
-    required: true
+    required: true,
   },
   Owner: { 
     type: String,
-    required: true
+    required: true,
+    
   },
   Date: {
     type: Date,
@@ -16,20 +17,21 @@ const ParkSchema = new mongoose.Schema({
   },
   Arrival: {
     type: Date,
-    required: true
+    required: true,
+
   },
   Departure: {
     type: Date,
     required: true
   },
-  // Slot: {
-  //   type: Number,
-  //   required: true
-  // },
-  // Fare: {
-  //   type: Number,
-  //   required: true 
-  // },
+  Slot: {
+    type: Number,
+    required: true
+  },
+  Fare: {
+    type: Number,
+    required: true
+  },
 })
 
 const Park = new mongoose.model("Park", ParkSchema);
