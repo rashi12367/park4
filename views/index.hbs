@@ -6,6 +6,7 @@
         <div class="table-response">
             <table class="table">
                 <tr>
+                    <th>ID</th>
                     <th>Car_registration_no.</th>
                     <th>Owner</th>
                     <th>Date</th>
@@ -18,12 +19,13 @@
                 </tr>
                 {{#each data}}
                 <tr>
+                    <td>{{_id}}</td>
                     <td>{{Car_Registration_number}}</td>
                     <td>{{Owner}}</td>
                     <td>{{Date}}</td>
                     <td>{{Arrival}}</td>
                     <td>{{Departure}}</td>
-                    <td>{{_slot}}</td>
+                    <td>{{slot}}</td>
                     <td>{{Fare}}</td>
                     <td><a href="/update/{{_id}}"><span class="material-symbols-outlined">edit</span></a></td>
                     <td><a href="/delete/{{_id}}"><span class="material-symbols-outlined">delete_forever</span></a></td>
